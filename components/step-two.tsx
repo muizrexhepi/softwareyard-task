@@ -47,7 +47,7 @@ export const StepTwo: React.FC<{
     <div className="flex flex-col items-center justify-center w-full">
       <div className="w-full max-w-md">
         <h2 className="text-lg font-semibold text-left mb-2">
-          Let's validate your number
+          Let&apos;s validate your number
         </h2>
 
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -74,7 +74,7 @@ export const StepTwo: React.FC<{
           </div>
 
           <div className="text-xs sm:text-sm text-gray-600 text-left mt-6">
-            By clicking 'Continue' you confirm that you agree to our
+            By clicking &apos;Continue&apos; you confirm that you agree to our
             <a href="#" className="text-primary ml-1">
               terms and conditions
             </a>{" "}

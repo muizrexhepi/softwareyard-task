@@ -26,7 +26,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
             </option>
           ))}
         </select>
-        <div className="absolute inset-y-0 right-0 flex items-center pr-5 pointer-events-none">
+        <div className="absolute top-3.5 right-0 flex items-center pr-5 pointer-events-none">
           <ChevronDown size={18} />
         </div>
         {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
