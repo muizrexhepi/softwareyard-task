@@ -83,13 +83,12 @@ export const StepTwo = ({ onNext }: StepTwoProps) => {
                 >
                   terms and conditions
                 </button>{" "}
-                and
+                and{" "}
                 <button
                   type="button"
                   onClick={() => setIsPrivacyOpen(true)}
                   className="text-primary "
                 >
-                  {" "}
                   privacy policy
                 </button>
               </>

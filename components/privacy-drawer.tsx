@@ -20,11 +20,10 @@ const PrivacyDrawer = ({ isOpen, onClose }: DrawerProps) => {
             exit={{ y: "100%" }}
             transition={{ duration: 0.2 }}
           >
-            {/* Close Button */}
             <button
               type="button"
               onClick={onClose}
-              className="p-2 absolute top-4 right-4"
+              className="p-2 absolute top-10 right-6"
             >
               <X size={24} className="text-gray-500" />
             </button>
