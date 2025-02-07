@@ -55,11 +55,7 @@ export const CountryCodeSelect = () => {
                   onChange={(e) => setSearch(e.target.value)}
                 />
                 <SearchIcon className="absolute right-24 text-gray-500" />
-                <button
-                  type="button"
-                  onClick={() => setIsOpen(false)}
-                  className="p-2"
-                >
+                <button type="button" onClick={() => setIsOpen(false)}>
                   <X size={24} className="text-gray-500" />
                 </button>
               </div>

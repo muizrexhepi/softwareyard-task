@@ -37,7 +37,7 @@ export const RegistrationForm = () => {
         key={step}
         custom={direction}
         variants={slideVariants}
-        initial="enter"
+        initial={direction !== 0 ? "enter" : "none"}
         animate="center"
         transition={transition}
         className="w-full mt-4"

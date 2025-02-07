@@ -8,6 +8,9 @@ export const useFormNavigation = () => {
 
   const handleNext = () => {
     setDirection(1);
+    if (step == 2) {
+      setDirection(0);
+    }
     setStep((prev) => prev + 1);
   };
 
@@ -18,7 +21,7 @@ export const useFormNavigation = () => {
 
   const handleRestart = () => {
     resetForm();
-    setDirection(-1);
+    setDirection(0);
     setStep(1);
   };
 
