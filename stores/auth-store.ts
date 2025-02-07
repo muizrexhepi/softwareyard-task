@@ -6,8 +6,9 @@ interface RegistrationState {
   lastName: string;
   phoneNumber: string;
   countryCode: string;
-  setStepOneData: (data: { firstName: string; lastName: string }) => void;
-  setStepTwoData: (data: { phoneNumber: string; countryCode: string }) => void;
+  setRegistrationData: (
+    data: Partial<Omit<RegistrationState, "setRegistrationData" | "resetForm">>
+  ) => void;
   resetForm: () => void;
 }
 
@@ -18,8 +19,7 @@ export const useRegistrationStore = create<RegistrationState>()(
       lastName: "",
       phoneNumber: "",
       countryCode: "+44",
-      setStepOneData: (data) => set(data),
-      setStepTwoData: (data) => set(data),
+      setRegistrationData: (data) => set(data),
       resetForm: () =>
         set({
           firstName: "",

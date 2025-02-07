@@ -14,7 +14,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
         <select
           ref={ref}
           className={cn(
-            "w-24 px-5 py-3.5 border rounded-full font-light appearance-none outline-primary",
+            "w-32 px-5 h-14 border rounded-full font-light appearance-none outline-primary",
             error ? "border-red-500" : "border-gray-300",
             className
           )}
@@ -22,7 +22,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
         >
           {options.map((option) => (
             <option key={option.value} value={option.value}>
-              {option.label}
+              {option.value}
             </option>
           ))}
         </select>
